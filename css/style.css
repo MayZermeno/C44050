@@ -1,0 +1,376 @@
+/*Estilos Generales*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    height: 8vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: 1px solid #fff;
+    box-shadow: 5px 0 10px rgba(255, 227, 247, 1);
+}
+
+.menu-items {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-items li {
+    border-radius: 3px;
+    margin: 0 5px;
+}
+
+li {
+    list-style: none;
+}
+
+header ul li a {
+    padding: 7px 13px;
+    color: rgb(18, 17, 17);
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    text-transform: uppercase;
+}
+
+main {
+    width: 100%;
+    height: 86vh;
+    padding: 30px 30px;
+    overflow: scroll;
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; */
+}
+
+footer {
+    height: 6vh;
+    background-color: rgb(37, 37, 37);
+}
+
+footer ul li {
+    display: inline-block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: rgb(239, 235, 227);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.grid-item {
+    color: white;
+    padding: 25px;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+/*Estilos Del Index*/
+
+.contenedorindex {
+    /* Flexbox */
+    /* display: flex;
+    flex-wrap: wrap; */
+    height: 86vh;
+    background: linear-gradient(90deg, rgba(255, 192, 192, 1) 0%, rgba(255, 191, 216, 1) 52%, rgba(255, 227, 247, 1) 100%);
+    /* Grid */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+@media screen and (max-width: 940px) {
+    header ul li a {
+        padding: 7px 5px;
+        color: rgb(18, 17, 17);
+        text-decoration: none;
+        font-size: 10px;
+        display: block;
+    }
+    .contenedorindex .section1 {
+        display: flex;
+        flex-wrap: wrap;
+        align-self: center;
+        align-content: center;
+        grid-column: 1/-1;
+    }
+    .contenedorindex .section1 img {
+        width: 100%;
+        height: auto;
+    }
+    .contenedorindex .section2 {
+        grid-column: 1/-1;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 332px) {
+    header ul li a {
+        padding: 7px 0px;
+        color: rgb(18, 17, 17);
+        text-decoration: none;
+        font-size: 8px;
+        display: block;
+    }
+    .grid-item {
+        color: white;
+        font-size: 9px;
+        text-align: center;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .grid-item {
+        color: white;
+        font-size: 10px;
+        text-align: center;
+    }
+}
+
+.titulobienvenida {
+    margin-bottom: 10px;
+}
+
+.textobienvenida {
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.section1 {
+    display: inline-block;
+    align-self: center;
+    margin: auto;
+}
+
+.section2 {
+    align-self: center;
+}
+
+button {
+    margin-top: 40px;
+    margin-right: 10px;
+    float: right;
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-color: rgb(56, 56, 56);
+    color: white;
+    border-radius: 5px;
+}
+
+
+/*FormularioCSS*/
+
+.formulario {
+    padding: 20px 0px;
+    position: relative;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.button {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    float: right;
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-color: rgb(56, 56, 56);
+    color: white;
+    border-radius: 5px;
+}
+
+input {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    width: 100%;
+    border: none;
+    border-bottom: solid 1px rgb(111, 111, 111);
+}
+
+label {
+    position: absolute;
+}
+
+@media screen and (max-width: 640px) {
+    .boton {
+        display: flex;
+        justify-content: center;
+    }
+    .button {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        border: none;
+        background-color: rgb(255, 192, 192, 1);
+        color: rgb(70, 70, 70);
+        font-weight: 500;
+        border-radius: 5px;
+    }
+    .main-formulario {
+        padding: 15px;
+        overflow: scroll;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    input {
+        height: 30px;
+        width: 220px;
+    }
+    label {
+        font-size: 10px;
+    }
+    .boton {
+        display: flex;
+        justify-content: center;
+    }
+    .button {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        border: none;
+        background-color: rgb(255, 192, 192, 1);
+        color: rgb(70, 70, 70);
+        font-weight: 500;
+        border-radius: 5px;
+    }
+    .main-formulario {
+        padding: 10px;
+        overflow: scroll;
+    }
+    .contenido-formulario {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+main h1 {
+    display: flex;
+    justify-content: center;
+}
+
+main ul li {
+    padding: 30px;
+    margin-top: 30px;
+}
+
+
+/*GaleríaCSS*/
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.galeria img {
+    display: block;
+    margin: auto;
+    width: 500px;
+}
+
+.galeria iframe {
+    display: block;
+    margin: auto;
+}
+
+@media screen and (max-width: 1050px) {
+    .galeria img {
+        display: block;
+        margin: auto;
+        width: 300px;
+    }
+    .galeria iframe {
+        display: block;
+        margin: auto;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .galeria img {
+        display: block;
+        margin: auto;
+        width: 180px;
+    }
+    .galeria iframe {
+        display: block;
+        margin: auto;
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .galeria {
+        display: inline;
+        padding: 10px 0px;
+        gap: 20px;
+    }
+    .galeria img {
+        display: block;
+        margin: auto;
+        width: 180px;
+        padding: 10px 0px;
+    }
+    .galeria iframe {
+        display: block;
+        margin: auto;
+        width: 180px;
+    }
+}
+
+
+/*MIFORMACIONCSS*/
+
+@media screen and (max-width: 440px) {
+    .formacion {
+        font-size: 10px;
+    }
+    .formaciontext {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .texto {
+        text-align: justify;
+        font-size: 12px;
+    }
+}
+
+.formacion {
+    font-weight: bold;
+}
+
+.formaciontext {
+    padding-left: 30px;
+}
+
+.texto {
+    text-align: justify;
+}
