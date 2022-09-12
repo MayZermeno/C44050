@@ -84,6 +84,10 @@ footer ul li {
     text-align: center;
 }
 
+.grid-item:hover {
+    color: aqua;
+}
+
 
 /*Estilos Del Index*/
 
@@ -106,6 +110,10 @@ footer ul li {
         text-decoration: none;
         font-size: 10px;
         display: block;
+    }
+    .contenedorindex {
+        background: linear-gradient(90deg, rgb(118, 76, 107) 0%, rgb(85, 55, 112) 52%, rgb(47, 39, 55) 100%);
+        color: white;
     }
     .contenedorindex .section1 {
         display: flex;
@@ -146,6 +154,16 @@ footer ul li {
         font-size: 10px;
         text-align: center;
     }
+}
+
+li :hover {
+    color: pink;
+}
+
+li :active {
+    border-radius: 5px;
+    background: grey;
+    color: pink;
 }
 
 .titulobienvenida {
