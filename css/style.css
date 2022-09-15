@@ -61,15 +61,11 @@ main {
 
 footer {
     height: 6vh;
-    background-color: rgb(37, 37, 37);
+    background-color: rgb(36, 36, 37);
 }
 
-footer ul li {
-    display: inline-block;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    color: rgb(239, 235, 227);
+.item-footer {
+    padding: 0px 15px;
 }
 
 .grid-container {
@@ -189,11 +185,7 @@ button {
     margin-top: 40px;
     margin-right: 10px;
     float: right;
-    width: 100px;
-    height: 40px;
     border: none;
-    background-color: rgb(56, 56, 56);
-    color: white;
     border-radius: 5px;
 }
 
