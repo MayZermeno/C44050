@@ -4,79 +4,113 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="widli=device-widli, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Contacto</title>
+    <title>Landing</title>
 </head>
 <!-- Proyecto Coder-Zermeño -->
 
 <body>
     <header>
-        <ul class="menu-items">
-            <li> <a href="../index.html">
-                Home
-            </a></li>
-            <li><a href="./formacion.html">
-               Formación
-            </a></li>
-            <li> <a href="./galery.html">
-                Galería
-            </a></li>
-            <li> <a href="./blog.html">
-                Blog
-             </a></li>
-            <li><a href="./contact.html">
-                contacto
-            </a></li>
-        </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+
+                <button class="navbar-toggler m-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav justify-content-center  mb-lg-0">
+                        <li> <a href="../index.html">
+                        Home
+                    </a></li>
+                        <li><a href="../pages/formacion.html">
+                       Formación
+                    </a></li>
+                        <li> <a href="../pages/galery.html">
+                        Galería
+                    </a></li>
+                        <li> <a href="../pages/blog.html">
+                        Blog
+                     </a></li>
+                        <li><a href="../pages/contact.html">
+                        contacto
+                    </a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
     </header>
-    <main class="main-formulario">
-        <h1>Contacto</h1>
-        <div class="contenido-formulario">
-            <div class="contactame">
-                <form action="" method="post">
-                    <fieldset style="display: contents;">
-                        <legend>Ingresa tus datos</legend>
-                        <div class="formulario">
-                            <label for="Nombre">Nombre</label>
-                            <input type="text" id="name" placeholder="">
+    <main>
+        <div class="row">
+            <h1>Contacto</h1>
+            <div class="col-12">
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="validationCustom01" class="form-label">Nombres</label>
+                        <input type="text" class="form-control" id="validationCustom01" value="" required>
+                        <div class="valid-feedback">
+                            Muy bien!
                         </div>
-                        <div class="formulario">
-                            <label for="mail">Email</label>
-                            <input type="text" id="mail" placeholder="">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="validationCustom02" class="form-label">Apellidos</label>
+                        <input type="text" class="form-control" id="validationCustom02" value="" required>
+                        <div class="valid-feedback">
+                            Looks good!
                         </div>
-                        <div class="formulario">
-                            <label for="phone">Telefono</label>
-                            <input type="number" id="phone" placeholder="">
-                        </div>
-                        <div class="formulario">
-                            <label for="city">Ciudad</label>
-                            <input type="text" id="city" placeholder="">
-                        </div>
-                        <div class="formulario">
-                            <label for="Mensaje">Mensaje</label>
-                            <textarea name="Mensaje" id="mensaje" cols="20" rows="3"></textarea></div>
-                        <div class="boton">
-                            <input class="button" type="submit" id="enviar" value="Enviar" placeholder="Enviar"></div>
-                    </fieldset>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                    </div>
 
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label">Domicilio</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="inputCity" class="form-label">Ciudad</label>
+                        <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputState" class="form-label">Tema</label>
+                        <select id="inputState" class="form-select">
+                        <option selected>Elegir</option>
+                        <option>Cotización</option>
+                        <option>Diseño</option>
+                      </select>
+                    </div>
+
+
+                    <div class="formulario ">
+                        <label for="Mensaje">Mensaje</label>
+                        <textarea class="form-control" name="Mensaje" id="mensaje" cols="20" rows="3"></textarea></div>
+                    <div class="boton">
+                        <input class="button" type="submit" id="enviar" value="Enviar" placeholder="Enviar"></div>
                 </form>
-            </div>
-            <div class="contact-info">
-
-            </div>
-        </div>
     </main>
     <footer>
-        <div class="grid-container">
-            <div class="grid-item">Whatsapp</div>
-            <div class="grid-item">Correo eléctronico</div>
-
-        </div>
+        <ul class="nav p-4 justify-content-center">
+            <li class="item-footer">
+                <img src="../assets/redeswhite/insta.png" width="20">
+            </li>
+            <li class="item-footer">
+                <img src="../assets/redeswhite/face.png" width="20">
+            </li>
+            <li class="item-footer">
+                <img src="../assets/redeswhite/linkedin.png" width="20">
+            </li>
+            <li class="item-footer">
+                <img src="../assets/redeswhite/ws.png" width="25">
+            </li>
+        </ul>
     </footer>
 
 

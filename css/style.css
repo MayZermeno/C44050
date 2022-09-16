@@ -57,17 +57,7 @@ footer {
     padding: 0px 15px;
 }
 
-@media screen and (min-width: 992px) {
-    .col-lg-6 {
-        flex: 0 0 auto;
-        width: 100%;
-    }
-}
-
 .contenedorindex {
-    /* Flexbox */
-    /* display: flex;
-    flex-wrap: wrap; */
     height: 88vh;
     background: linear-gradient(90deg, rgba(255, 192, 192, 1) 0%, rgba(255, 191, 216, 1) 52%, rgba(255, 227, 247, 1) 100%);
 }
@@ -103,14 +93,6 @@ button {
     border-radius: 5px;
 }
 
-
-/*FormularioCSS*/
-
-.formulario {
-    padding: 20px 0px;
-    position: relative;
-}
-
 h1 {
     margin-bottom: 30px;
 }
@@ -125,175 +107,6 @@ h1 {
     background-color: rgb(56, 56, 56);
     color: white;
     border-radius: 5px;
-}
-
-input {
-    display: flex;
-    justify-content: center;
-    height: 30px;
-    width: 100%;
-    border: none;
-    border-bottom: solid 1px rgb(111, 111, 111);
-}
-
-label {
-    position: absolute;
-}
-
-@media screen and (max-width: 640px) {
-    .boton {
-        display: flex;
-        justify-content: center;
-    }
-    .button {
-        display: flex;
-        justify-content: center;
-        width: 80%;
-        border: none;
-        background-color: rgb(255, 192, 192, 1);
-        color: rgb(70, 70, 70);
-        font-weight: 500;
-        border-radius: 5px;
-    }
-    .main-formulario {
-        padding: 15px;
-        overflow: scroll;
-    }
-}
-
-@media screen and (max-width: 340px) {
-    input {
-        height: 30px;
-        width: 220px;
-    }
-    label {
-        font-size: 10px;
-    }
-    .boton {
-        display: flex;
-        justify-content: center;
-    }
-    .button {
-        display: flex;
-        justify-content: center;
-        width: 80%;
-        border: none;
-        background-color: rgb(255, 192, 192, 1);
-        color: rgb(70, 70, 70);
-        font-weight: 500;
-        border-radius: 5px;
-    }
-    .main-formulario {
-        padding: 10px;
-        overflow: scroll;
-    }
-    .contenido-formulario {
-        display: flex;
-        justify-content: center;
-    }
-}
-
-main h1 {
-    display: flex;
-    justify-content: center;
-}
-
-main ul li {
-    padding: 30px;
-    margin-top: 30px;
-}
-
-
-/*GaleríaCSS*/
-
-
-/* .galeria {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-
-.galeria img {
-    display: block;
-    margin: auto;
-    width: 500px;
-}
-
-.galeria iframe {
-    display: block;
-    margin: auto;
-} */
-
-@media screen and (max-width: 1050px) {
-    .galeria img {
-        display: block;
-        margin: auto;
-        width: 300px;
-    }
-    .galeria iframe {
-        display: block;
-        margin: auto;
-        width: 300px;
-    }
-}
-
-@media screen and (max-width: 650px) {
-    .galeria img {
-        display: block;
-        margin: auto;
-        width: 180px;
-    }
-    .galeria iframe {
-        display: block;
-        margin: auto;
-        width: 180px;
-    }
-}
-
-@media screen and (max-width: 420px) {
-    .galeria {
-        display: inline;
-        padding: 10px 0px;
-        gap: 20px;
-    }
-    .galeria img {
-        display: block;
-        margin: auto;
-        width: 180px;
-        padding: 10px 0px;
-    }
-    .galeria iframe {
-        display: block;
-        margin: auto;
-        width: 180px;
-    }
-}
-
-
-/*MIFORMACIONCSS*/
-
-@media screen and (max-width: 440px) {
-    .formacion {
-        font-size: 10px;
-    }
-    .formaciontext {
-        font-size: 9px;
-    }
-}
-
-@media screen and (max-width: 440px) {
-    .texto {
-        text-align: justify;
-        font-size: 12px;
-    }
-}
-
-.formacion {
-    font-weight: bold;
-}
-
-.formaciontext {
-    padding-left: 30px;
 }
 
 .texto {
