@@ -40,7 +40,8 @@ header ul li a {
 main {
     height: 88vh;
     width: 100%;
-    padding: 30px 30px;
+    background: linear-gradient(90deg, rgba(255, 192, 192, 1) 0%, rgba(255, 191, 216, 1) 52%, rgba(255, 227, 247, 1) 100%);
+    /* padding: 30px 30px; */
     overflow: scroll;
     /* display: flex;
     flex-direction: row;
@@ -63,7 +64,12 @@ footer {
 }
 
 .section1 {
+    padding: 10px;
     text-align: center;
+}
+
+.section2 {
+    padding: 50px 25px 0px 0px;
 }
 
 li :hover {
@@ -76,6 +82,15 @@ li :active {
     color: pink;
 }
 
+.slide {
+    background-color: rgba(39, 39, 39, 0.508);
+    margin: auto;
+}
+
+.carrusel {
+    max-height: 500px;
+}
+
 .titulobienvenida {
     margin-bottom: 10px;
 }
@@ -86,8 +101,6 @@ li :active {
 }
 
 button {
-    margin-top: 40px;
-    margin-right: 10px;
     float: right;
     border: none;
     border-radius: 5px;
@@ -95,6 +108,10 @@ button {
 
 h1 {
     margin-bottom: 30px;
+}
+
+.carousel-caption {
+    background-color: rgba(39, 39, 39, 0.508);
 }
 
 .button {
