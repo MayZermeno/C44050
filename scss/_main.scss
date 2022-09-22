@@ -1,0 +1,46 @@
+main {
+    height: 88vh;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(255, 192, 192, 1) 0%, rgba(255, 191, 216, 1) 52%, rgba(255, 227, 247, 1) 100%);
+    overflow: scroll;
+    .contenedorindex {
+        height: 88vh;
+        background: linear-gradient(90deg, rgba(255, 192, 192, 1) 0%, rgba(255, 191, 216, 1) 52%, rgba(255, 227, 247, 1) 100%);
+        .section1 {
+            padding: 10px;
+            text-align: center;
+            .section2 {
+                padding: 50px 25px 0px 0px;
+            }
+        }
+    }
+}
+
+.titulobienvenida {
+    margin-bottom: 10px;
+}
+
+.textobienvenida {
+    text-align: justify;
+    margin-top: 20px;
+}
+
+button {
+    float: right;
+    border: none;
+    border-radius: 5px;
+}
+
+.contenedorindex {
+    .slide {
+        background-color: rgba(39, 39, 39, 0.508);
+        margin: auto;
+        .carrusel {
+            max-height: 500px;
+        }
+    }
+}
+
+.carousel-caption {
+    background-color: rgba(39, 39, 39, 0.508);
+}
