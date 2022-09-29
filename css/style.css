@@ -9,11 +9,11 @@ header .navbar {
       font-size: 15px;
       text-transform: uppercase; }
       header .navbar ul li a:hover {
-        color: pink; }
+        color: #ffa0d9;
+        border: 2px solid #ff46f0; }
       header .navbar ul li a:active {
         border-radius: 5px;
-        background: grey;
-        color: pink; }
+        color: #ff4463; }
 
 header .collapse {
   justify-content: center;
@@ -32,29 +32,52 @@ main {
     main .contenedorindex .section1 {
       padding: 10px;
       text-align: center; }
-      main .contenedorindex .section1 .section2 {
-        padding: 50px 25px 0px 0px; }
 
-.titulobienvenida {
-  margin-bottom: 10px; }
+.section2 {
+  display: grid;
+  place-items: center;
+  height: 400px; }
+  .section2 .btn-dark {
+    float: right;
+    border: none;
+    border-radius: 5px; }
+  .section2 .textobienvenida {
+    text-align: justify;
+    margin-top: 20px; }
+  .section2 .titulobienvenida {
+    margin-bottom: 10px; }
 
-.textobienvenida {
-  text-align: justify;
-  margin-top: 20px; }
-
-button {
-  float: right;
-  border: none;
-  border-radius: 5px; }
+.img-fluid {
+  border-radius: 5px;
+  -webkit-animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both; }
 
 .contenedorindex .slide {
   background-color: rgba(39, 39, 39, 0.508);
   margin: auto; }
+  .contenedorindex .slide .carousel-caption {
+    background-color: rgba(39, 39, 39, 0.508); }
   .contenedorindex .slide .carrusel {
     max-height: 500px; }
 
-.carousel-caption {
-  background-color: rgba(39, 39, 39, 0.508); }
+.card {
+  background: rgba(99, 99, 103, 0.56); }
+
+@-webkit-keyframes rotate-vert-center {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0); }
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg); } }
+
+@keyframes rotate-vert-center {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0); }
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg); } }
 
 footer {
   height: 6vh;
