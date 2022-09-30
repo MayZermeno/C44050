@@ -5,3 +5,11 @@ footer {
         padding: 0px 15px;
     }
 }
+
+$redes: ( facebook:blue, instagram: rgb(201, 91, 109), whastapp: green, linkedin: rgb(97, 63, 116), );
+@each $redsocial,
+$color in $redes {
+    .fa-#{$redsocial} {
+        background-color: $color
+    }
+}

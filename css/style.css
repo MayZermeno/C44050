@@ -13,11 +13,11 @@ header .navbar {
         border: 2px solid #ff46f0; }
       header .navbar ul li a:active {
         border-radius: 5px;
-        color: #ff4463; }
+        color: #ff46f0; }
 
 header .collapse {
   justify-content: center;
-  background: #f9f8f89d;
+  background: #fafafad4;
   border-radius: 10px;
   z-index: 10; }
 
@@ -47,10 +47,10 @@ main {
   .section2 .titulobienvenida {
     margin-bottom: 10px; }
 
-.img-fluid {
+.imganimate {
   border-radius: 5px;
-  -webkit-animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
-  animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both; }
+  -webkit-animation: rotate-vert-center 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  animation: rotate-vert-center 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both; }
 
 .contenedorindex .slide {
   background-color: rgba(39, 39, 39, 0.508);
@@ -61,7 +61,17 @@ main {
     max-height: 500px; }
 
 .card {
-  background: rgba(99, 99, 103, 0.56); }
+  background: rgba(47, 47, 47, 0.598);
+  color: #f0f0f0; }
+  .card .card-img-top {
+    max-height: 300px; }
+
+.titulo {
+  text-align: center;
+  color: #64396a; }
+
+.degradado {
+  background: rgba(207, 153, 162, 0.876); }
 
 @-webkit-keyframes rotate-vert-center {
   0% {
@@ -84,6 +94,18 @@ footer {
   background-color: #242425; }
   footer .item-footer {
     padding: 0px 15px; }
+
+.fa-facebook {
+  background-color: blue; }
+
+.fa-instagram {
+  background-color: #c95b6d; }
+
+.fa-whastapp {
+  background-color: green; }
+
+.fa-linkedin {
+  background-color: #613f74; }
 
 * {
   margin: 0;

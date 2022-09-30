@@ -31,10 +31,10 @@ main {
     }
 }
 
-.img-fluid {
+.imganimate {
     border-radius: 5px;
-    -webkit-animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-    animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    -webkit-animation: rotate-vert-center 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    animation: rotate-vert-center 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 }
 
 .contenedorindex {
@@ -51,7 +51,20 @@ main {
 }
 
 .card {
-    background: rgba(99, 99, 103, 0.56);
+    background: $fondooscuro;
+    color: rgb(240, 240, 240);
+    .card-img-top {
+        max-height: 300px;
+    }
+}
+
+.titulo {
+    text-align: center;
+    color: $colorcontraste;
+}
+
+.degradado {
+    background: rgba(207, 153, 162, 0.876);
 }
 
 @-webkit-keyframes rotate-vert-center {

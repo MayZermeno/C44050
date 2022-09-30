@@ -11,12 +11,12 @@
                             font-size: 15px;
                             text-transform: uppercase;
                             &:hover {
-                                color: rgb(255, 160, 217);
-                                border: 2px solid rgb(255, 70, 240);
+                                color: $colorsecundario;
+                                border: 2px solid $colorprincipal;
                             }
                             &:active {
                                 border-radius: 5px;
-                                color: rgb(255, 68, 99);
+                                color: $colorprincipal;
                             }
                         }
                     }
@@ -27,7 +27,7 @@
         header {
             .collapse {
                 justify-content: center;
-                background: #f9f8f89d;
+                background: $fondoclaro;
                 border-radius: 10px;
                 z-index: 10;
             }
