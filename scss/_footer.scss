@@ -6,10 +6,18 @@ footer {
     }
 }
 
-$redes: ( facebook:blue, instagram: rgb(201, 91, 109), whastapp: green, linkedin: rgb(97, 63, 116), );
+$redes: ( facebook:rgba(40, 40, 170, 0.594), instagram: rgba(216, 89, 169, 0.702), whatsapp: rgba(42, 209, 42, 0.481), linkedin: rgba(63, 105, 116, 0.612), );
 @each $redsocial,
 $color in $redes {
     .fa-#{$redsocial} {
-        background-color: $color
+        background-color: $color;
+        border-radius: 3px;
     }
+}
+
+.fa-facebook,
+.fa-instagram,
+.fa-linkedin,
+.fa-whatsapp {
+    @extend %iconos
 }

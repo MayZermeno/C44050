@@ -1,3 +1,17 @@
+.fa-facebook,
+.fa-instagram,
+.fa-linkedin,
+.fa-whatsapp {
+  width: 50px; }
+  .fa-facebook:hover,
+  .fa-instagram:hover,
+  .fa-linkedin:hover,
+  .fa-whatsapp:hover {
+    border: 2px solid #f3f3f3;
+    -webkit-box-shadow: 0px 13px 5px 0px #363636;
+    -moz-box-shadow: 0px 13px 5px 0px #363636;
+    box-shadow: 0px 13px 5px 0px #363636; }
+
 header .navbar {
   height: 6vh; }
   header .navbar ul li {
@@ -64,14 +78,15 @@ main {
   background: rgba(47, 47, 47, 0.598);
   color: #f0f0f0; }
   .card .card-img-top {
+    width: auto;
     max-height: 300px; }
+
+.galeria {
+  background: rgba(71, 49, 81, 0.407); }
 
 .titulo {
   text-align: center;
   color: #64396a; }
-
-.degradado {
-  background: rgba(207, 153, 162, 0.876); }
 
 @-webkit-keyframes rotate-vert-center {
   0% {
@@ -96,16 +111,20 @@ footer {
     padding: 0px 15px; }
 
 .fa-facebook {
-  background-color: blue; }
+  background-color: rgba(40, 40, 170, 0.594);
+  border-radius: 3px; }
 
 .fa-instagram {
-  background-color: #c95b6d; }
+  background-color: rgba(216, 89, 169, 0.702);
+  border-radius: 3px; }
 
-.fa-whastapp {
-  background-color: green; }
+.fa-whatsapp {
+  background-color: rgba(42, 209, 42, 0.481);
+  border-radius: 3px; }
 
 .fa-linkedin {
-  background-color: #613f74; }
+  background-color: rgba(63, 105, 116, 0.612);
+  border-radius: 3px; }
 
 * {
   margin: 0;

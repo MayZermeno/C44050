@@ -10,8 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <meta name="description" content="Revisa nuestros trabajos">
+    <meta name="keywords" content="desarrollo web, pagina web, personalizado, promocion, creacion">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Landing</title>
+    <title>MZ-Mi portafolio</title>
 </head>
 <!-- Proyecto Coder-Zermeño -->
 
@@ -52,66 +54,81 @@
                 <h1>Galería</h1>
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
-                        <div class="card">
-                            <img src="../assets/imggalery/design.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Moody Food</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="card galeria">
+                            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../assets/galery/landing.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/galery/prod.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/galery/brand.png" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <!-- <img src="../assets/imggalery/design.jpg" class="card-img-top" alt="..."> -->
+                            <div class="card-body ">
+                                <h5 class="card-title">Gpo San Carlos Comercializadora</h5>
                             </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card">
+                        <div class="card galeria">
                             <img src="../assets/imggalery/desk.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Template</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card">
+                        <div class="card galeria">
                             <img src="../assets/imggalery/food.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Desk</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                            <div class="card-body ">
+                                <h5 class="card-title">Food</h5>
                             </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card">
+                        <div class="card galeria">
                             <img src="../assets/imggalery/uides.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">About Us</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <div class="card-body ">
+                                <h5 class="card-title">Responsive</h5>
                             </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card">
                             <iframe height="315" src="https://www.youtube.com/embed/MG_AFPkbfCk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
                         </div>
                     </div>
                 </div>
     </main>
     <footer>
         <ul class="nav p-4 justify-content-center ">
-            <li class="item-footer">
+            <li class="item-footer fa-instagram">
                 <a href="https://www.instagram.com/"><img src="../assets/redeswhite/insta.png" width="20"></a>
             </li>
-            <li class="item-footer">
+            <li class="item-footer fa-facebook">
                 <a href="https://www.facebook.com/"> <img src="../assets/redeswhite/face.png" width="20"></a>
             </li>
-            <li class="item-footer">
+            <li class="item-footer fa-linkedin">
                 <a href="https://www.linkedin.com/"> <img src="../assets/redeswhite/linkedin.png" width="20"></a>
             </li>
-            <li class="item-footer ">
-                <a href="https://wa.me/5585312161"> <img src="../assets/redeswhite/ws.png" width="25"></a>
+            <li class="item-footer fa-whatsapp">
+                <a href="https://wa.me/5585312161"> <img src="../assets/redeswhite/ws.png" width="20"></a>
             </li>
         </ul>
     </footer>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 

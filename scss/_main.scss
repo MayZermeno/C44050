@@ -50,21 +50,26 @@ main {
     }
 }
 
+@mixin tamanos($ancho, $alto) {
+    width: $ancho;
+    max-height: $alto;
+}
+
 .card {
     background: $fondooscuro;
     color: rgb(240, 240, 240);
     .card-img-top {
-        max-height: 300px;
+        @include tamanos(auto, 300px)
     }
+}
+
+.galeria {
+    background: rgba(71, 49, 81, 0.407);
 }
 
 .titulo {
     text-align: center;
     color: $colorcontraste;
-}
-
-.degradado {
-    background: rgba(207, 153, 162, 0.876);
 }
 
 @-webkit-keyframes rotate-vert-center {
