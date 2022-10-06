@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <link href="fontawesome-free-6.2.0-web/css/fontawesome.css" rel="stylesheet">
+    <link href="fontawesome-free-6.2.0-web/css/brands.css" rel="stylesheet">
+    <link href="fontawesome-free-6.2.0-web/css/solid.css" rel="stylesheet">
     <meta name="description" content="Creación de páginas web personalizables, adaptables y responsivas">
     <meta name="keywords" content="desarrollo web, pagina web, personalizado, promocion, creacion">
     <link rel="stylesheet" href="./css/style.css">
@@ -18,6 +21,7 @@
 <!-- Proyecto Coder-Zermeño -->
 
 <body>
+    <!-- Barra de navegación -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
@@ -50,7 +54,10 @@
             </div>
         </nav>
     </header>
+    <!-- Termina la Barra de navegación -->
+    <!-- Inicia el contenido principal -->
     <main class="row contenedorindex m-0">
+        <!-- Fila que contiene un slider (más que nada decorativo)-->
         <div class="col-12 p-0 mb-4">
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -93,74 +100,86 @@
             </button>
             </div>
         </div>
+        <!-- Fila de presentación principal y medio de contacto directo, aquí se encuentra el <H1> correspondiente al index-->
+        <div class="fondo">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 mt-3">
+                    <div class="section1 pb-3">
+                        <img class="img-fluid imganimate" src="./assets/imgme.jpg">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 mt-3">
+                    <div class="section2 pt-2">
+                        <div class="informacion" style="padding-right: 10px;">
+                            <h1 class="titulobienvenida">Hola Bienvenido!</h1>
+                            <p class="textobienvenida"> Mi nombre es Mayra, soy diseñadora web, mí proposito es ayudar a las pequeñas y medianas empresas "start ups" a consolidarse en internet a través de la creación de su sitio web personalizado.<br> Si necesitas más información
+                                puedes encontrarla en esta página donde te presento una sección sobre mi formación academica, mi galeria de proyectos, un poquito de mi historia y si requieres contactarme puedes hacerlo a través de whatsapp, en mis redes
+                                o en la seccion de contacto.
+                            </p>
 
-        <div class="col-lg-6 col-md-12 col-sm-12 mt-3">
-            <div class="section1">
-                <img class="img-fluid imganimate" src="./assets/imgme.jpg">
-            </div>
-        </div>
-        <div class="col-lg-6 col-md-12 col-sm-12 mt-3">
-            <div class="section2 pt-2">
-                <div class="informacion" style="padding-right: 10px;">
-                    <h1 class="titulobienvenida">Hola Bienvenido!</h1>
-                    <p class="textobienvenida"> Mi nombre es Mayra, soy diseñadora web, mí proposito es ayudar a las pequeñas y medianas empresas "start ups" a consolidarse en internet a través de la creación de su sitio web personalizado.<br> Si necesitas más información puedes
-                        encontrarla en esta página donde te presento una sección sobre mi formación academica, mi galeria de proyectos, un poquito de mi historia y si requieres contactarme puedes hacerlo a través de whatsapp, en mis redes o en la seccion
-                        de contacto.
-                    </p>
 
-
-                    <a class="btn btn-dark" href="https://wa.me/5585312161" role="button">Contactame <img src="./assets/redeswhite/ws.png" width="25"></a>
+                            <a class="btn btn-pink" href="https://wa.me/5585312161" role="button">Contactame <img src="./assets/redeswhite/ws.png" width="25"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
+        <!-- Fila de tarjetas que presentan los metodos de desarrollo web-->
         <div class="row row-cols-1 row-cols-md-3 g-4 mb-3">
             <div class="col">
                 <div class="card">
-                    <img src="./assets/imggalery/boot.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">HTML/CSS/JS</h5>
-                        <p class="card-text">Creación convencional</p>
+                    <img src="./assets/imggalery/boot.png" class="card-img-top wobble-hor-bottom" alt="...">
+                    <div class="card-img-overlay d-none d-md-block">
+                        <div class="textocard">
+                            <p class="card-text ">Conceptos básicos</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="./assets/imggalery/saas.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Sass y SEO</h5>
-                        <p class="card-text">Con elementos de personalización y psoicionamiento</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="./assets/imggalery/react.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">React</h5>
-                        <p class="card-text">Tecnologias más avanzadas</p>
-                    </div>
-                </div>
-            </div>
 
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/imggalery/saas.jpeg" class="card-img-top wobble-hor-bottom" alt="...">
+                    <div class="card-img-overlay d-none d-md-block">
+                        <div class="textocard">
+
+                            <p class="card-text ">Personalización y Posicionamiento</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/imggalery/react.png" class="card-img-top wobble-hor-bottom" alt="...">
+                    <div class="card-img-overlay d-none d-md-block">
+                        <div class="textocard">
+
+                            <p class="card-text">Tecnologias más avanzadas</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </main>
+    <!-- Termina el contenido principal -->
+    <!-- Comienza el footer redes sociales -->
     <footer>
-        <ul class="nav p-4 justify-content-center">
-            <li class="item-footer fa-instagram">
-                <a href="https://www.instagram.com/"><img src="./assets/redeswhite/insta.png" width="20"></a>
+        <ul class="nav pt-3 justify-content-center">
+            <li class="item-footer ">
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram" style="color:white;"></i></a>
             </li>
-            <li class="item-footer fa-facebook">
-                <a href="https://www.facebook.com/"> <img src="./assets/redeswhite/face.png" width="20"></a>
+            <li class="item-footer ">
+                <a href="https://www.facebook.com/"> <i class="fa-brands fa-facebook" style="color:white;"></i></a>
             </li>
-            <li class="item-footer fa-linkedin">
-                <a href="https://www.linkedin.com/"> <img src="./assets/redeswhite/linkedin.png" width="20"></a>
+            <li class="item-footer ">
+                <a href="https://www.linkedin.com/"> <i class="fa-brands fa-linkedin" style="color:white;"></i></a>
             </li>
-
         </ul>
     </footer>
+    <!-- Termina el footer redes sociales -->
 
-
+    <!-- Scripts corrsponden a bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </body>

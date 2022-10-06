@@ -6,18 +6,20 @@ footer {
     }
 }
 
-$redes: ( facebook:rgba(40, 40, 170, 0.594), instagram: rgba(216, 89, 169, 0.702), whatsapp: rgba(42, 209, 42, 0.481), linkedin: rgba(63, 105, 116, 0.612), );
+$redes: ( facebook:rgba(77, 77, 213, 0.773), instagram: rgba(216, 89, 169, 0.702), whatsapp: rgba(42, 209, 42, 0.481), linkedin: rgba(36, 157, 222, 0.777), );
 @each $redsocial,
 $color in $redes {
     .fa-#{$redsocial} {
-        background-color: $color;
+        background: $color;
         border-radius: 3px;
     }
 }
 
-.fa-facebook,
-.fa-instagram,
-.fa-linkedin,
-.fa-whatsapp {
-    @extend %iconos
+.item-footer {
+    .fa-facebook,
+    .fa-instagram,
+    .fa-linkedin,
+    .fa-whatsapp {
+        @extend %iconos
+    }
 }

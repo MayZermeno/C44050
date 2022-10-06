@@ -1,11 +1,17 @@
-$ancho-boton:10px;
+$ancho-boton:160px;
 $colorprincipal:rgb(255, 70, 240);
 $colorsecundario:rgb(255, 160, 217);
 $colorcontraste:rgb(100, 57, 106);
+$gradiente: linear-gradient(90deg, rgb(186, 125, 172) 0%, rgb(231, 153, 191) 52%, rgb(251, 200, 236) 100%);
 $fondoclaro:#fafafad4;
+$galeriabg : rgba(71, 49, 81, 0.407);
 $fondooscuro:rgba(47, 47, 47, 0.598);
+$slidebg:rgba(39, 39, 39, 0.508);
+$textodark:rgb(33, 33, 33);
 %iconos {
     width: 50px;
+    padding: 10px;
+    text-align: center;
     &:hover {
         border: 2px solid rgb(243, 243, 243);
         -webkit-box-shadow: 0px 13px 5px 0px rgba(54, 54, 54, 1);

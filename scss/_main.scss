@@ -1,11 +1,10 @@
 main {
     height: 88vh;
     width: 100%;
-    background: linear-gradient(90deg, rgba(255, 192, 192, 1) 0%, rgba(255, 191, 216, 1) 52%, rgba(255, 227, 247, 1) 100%);
+    background: rgba(211, 198, 210, 0.789);
     overflow: scroll;
     .contenedorindex {
         height: 88vh;
-        background: linear-gradient(90deg, rgba(255, 192, 192, 1) 0%, rgba(255, 191, 216, 1) 52%, rgba(255, 227, 247, 1) 100%);
         .section1 {
             padding: 10px;
             text-align: center;
@@ -13,14 +12,21 @@ main {
     }
 }
 
+.fondo {
+    background: $gradiente;
+}
+
 .section2 {
     display: grid;
     place-items: center;
     height: 400px;
-    .btn-dark {
+    .btn-pink {
+        background-color: $galeriabg;
+        color: white;
         float: right;
-        border: none;
+        border: 2px solid $galeriabg;
         border-radius: 5px;
+        width: $ancho-boton;
     }
     .textobienvenida {
         text-align: justify;
@@ -39,10 +45,10 @@ main {
 
 .contenedorindex {
     .slide {
-        background-color: rgba(39, 39, 39, 0.508);
+        background-color: $slidebg;
         margin: auto;
         .carousel-caption {
-            background-color: rgba(39, 39, 39, 0.508);
+            background-color: $slidebg;
         }
         .carrusel {
             max-height: 500px;
@@ -56,15 +62,112 @@ main {
 }
 
 .card {
-    background: $fondooscuro;
+    background: $galeriabg;
     color: rgb(240, 240, 240);
+    &:hover {
+        .wobble-hor-bottom {
+            -webkit-animation: wobble-hor-bottom 0.9s both;
+            animation: wobble-hor-bottom 0.9s both;
+        }
+        /**
+ * ----------------------------------------
+* animation wobble-hor-bottom
+ * ----------------------------------------
+ */
+        @-webkit-keyframes wobble-hor-bottom {
+            0%,
+            100% {
+                -webkit-transform: translateX(0%);
+                transform: translateX(0%);
+                -webkit-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+            }
+            15% {
+                -webkit-transform: translateX(-30px) rotate(-6deg);
+                transform: translateX(-30px) rotate(-6deg);
+            }
+            30% {
+                -webkit-transform: translateX(15px) rotate(6deg);
+                transform: translateX(15px) rotate(6deg);
+            }
+            45% {
+                -webkit-transform: translateX(-15px) rotate(-3.6deg);
+                transform: translateX(-15px) rotate(-3.6deg);
+            }
+            60% {
+                -webkit-transform: translateX(9px) rotate(2.4deg);
+                transform: translateX(9px) rotate(2.4deg);
+            }
+            75% {
+                -webkit-transform: translateX(-6px) rotate(-1.2deg);
+                transform: translateX(-6px) rotate(-1.2deg);
+            }
+        }
+        @keyframes wobble-hor-bottom {
+            0%,
+            100% {
+                -webkit-transform: translateX(0%);
+                transform: translateX(0%);
+                -webkit-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+            }
+            15% {
+                -webkit-transform: translateX(-30px) rotate(-6deg);
+                transform: translateX(-30px) rotate(-6deg);
+            }
+            30% {
+                -webkit-transform: translateX(15px) rotate(6deg);
+                transform: translateX(15px) rotate(6deg);
+            }
+            45% {
+                -webkit-transform: translateX(-15px) rotate(-3.6deg);
+                transform: translateX(-15px) rotate(-3.6deg);
+            }
+            60% {
+                -webkit-transform: translateX(9px) rotate(2.4deg);
+                transform: translateX(9px) rotate(2.4deg);
+            }
+            75% {
+                -webkit-transform: translateX(-6px) rotate(-1.2deg);
+                transform: translateX(-6px) rotate(-1.2deg);
+            }
+        }
+    }
+    .card-img-overlay {
+        position: absolute;
+        right: 0;
+        top: 0;
+        left: 0;
+        padding: 0;
+        color: white;
+        text-align: center;
+        .textocard {
+            p {
+                padding: 10px 0;
+                font-size: 12px;
+                font-weight: 800;
+            }
+            background: $galeriabg;
+        }
+    }
     .card-img-top {
         @include tamanos(auto, 300px)
     }
 }
 
+.texto {
+    text-align: justify;
+    p {
+        font-size: 18px;
+    }
+}
+
 .galeria {
-    background: rgba(71, 49, 81, 0.407);
+    background: $galeriabg;
+}
+
+h3 {
+    color: $colorsecundario;
 }
 
 .titulo {
