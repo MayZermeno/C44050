@@ -168,6 +168,10 @@ main {
 h3 {
   color: #ffa0d9; }
 
+.formulario {
+  background: #64396a;
+  color: white; }
+
 .titulo {
   text-align: center;
   color: #64396a; }
