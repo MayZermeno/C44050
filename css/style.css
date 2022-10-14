@@ -77,7 +77,7 @@ main {
   .section2 .textobienvenida {
     text-align: justify;
     margin-top: 20px;
-    color: #ff7cf4;
+    color: white;
     font-weight: 600; }
   .section2 .titulobienvenida {
     margin-bottom: 10px; }
@@ -239,6 +239,12 @@ footer {
 .fa-linkedin {
   background: rgba(36, 157, 222, 0.777);
   border-radius: 3px; }
+
+.item-footer .fa-facebook,
+.item-footer .fa-instagram,
+.item-footer .fa-linkedin,
+.item-footer .fa-whatsapp {
+  color: white; }
 
 * {
   margin: 0;

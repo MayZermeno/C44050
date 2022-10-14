@@ -20,6 +20,7 @@ $color in $redes {
     .fa-instagram,
     .fa-linkedin,
     .fa-whatsapp {
-        @extend %iconos
+        @extend %iconos;
+        color: white
     }
 }
