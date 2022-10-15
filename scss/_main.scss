@@ -14,7 +14,7 @@
     }
     
     .section1 {
-        height: 300px;
+        height: 310px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -39,6 +39,14 @@
             color: white;
             float: right;
             border: 2px solid $galeriabg;
+            border-radius: 5px;
+            width: $ancho-boton;
+        }
+        .btn-pink:hover {
+            background-color: $colorsecundario;
+            color: $colorcontraste;
+            float: right;
+            border: 2px solid $colorsecundario;
             border-radius: 5px;
             width: $ancho-boton;
         }
@@ -163,7 +171,7 @@
             }
         }
         .card-img-top {
-            @include tamanos(auto, 400px)
+            @include tamanos(auto, 300px)
         }
     }
     

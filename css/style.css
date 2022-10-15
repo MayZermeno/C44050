@@ -50,7 +50,7 @@ main {
   background: linear-gradient(90deg, rgba(186, 125, 172, 0.502) 0%, rgba(231, 153, 191, 0.255) 52%, rgba(251, 200, 236, 0.185) 100%); }
 
 .section1 {
-  height: 300px;
+  height: 310px;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -72,6 +72,13 @@ main {
     color: white;
     float: right;
     border: 2px solid rgba(71, 49, 81, 0.407);
+    border-radius: 5px;
+    width: 160px; }
+  .section2 .btn-pink:hover {
+    background-color: #ffa0d9;
+    color: #64396a;
+    float: right;
+    border: 2px solid #ffa0d9;
     border-radius: 5px;
     width: 160px; }
   .section2 .textobienvenida {
@@ -166,7 +173,7 @@ main {
         font-weight: 800; }
   .card .card-img-top {
     width: auto;
-    max-height: 400px; }
+    max-height: 300px; }
 
 .card-img-overlay:hover {
   opacity: 1; }
