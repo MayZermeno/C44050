@@ -23,13 +23,14 @@ header .navbar {
       color: #64396a;
       text-decoration: none;
       font-size: 15px;
+      font-weight: 600;
       text-transform: uppercase; }
       header .navbar ul li a:hover {
         color: #ffa0d9;
         border: 2px solid #ffa0d9; }
       header .navbar ul li a:active {
         border-radius: 5px;
-        color: #ff7cf4; }
+        color: #ff68c5; }
 
 header .collapse {
   justify-content: center;
@@ -40,11 +41,18 @@ header .collapse {
 main {
   height: 88vh;
   width: 100%;
-  background: #38253e;
+  background-image: url("../assets/galery/textu.png");
+  background-color: #38253e;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   overflow-y: scroll;
   overflow-x: hidden; }
   main .contenedorindex {
     height: 88vh; }
+
+.row {
+  margin: 0; }
 
 .fondo {
   background: linear-gradient(90deg, rgba(186, 125, 172, 0.502) 0%, rgba(231, 153, 191, 0.255) 52%, rgba(251, 200, 236, 0.185) 100%); }
@@ -189,11 +197,22 @@ main {
 h1 {
   color: #ffa0d9; }
 
+h2 {
+  color: #f7f701; }
+
 h3 {
-  color: #ffa0d9; }
+  color: #ff68c5; }
+
+.text-muted {
+  color: #ff68c5 !important; }
+
+.container-form {
+  width: 100vw;
+  height: 100%; }
 
 .formulario {
-  background: #64396a;
+  border-radius: 10px;
+  background: linear-gradient(90deg, rgba(186, 125, 172, 0.502) 0%, rgba(231, 153, 191, 0.255) 52%, rgba(251, 200, 236, 0.185) 100%);
   color: white; }
 
 .titulo {
@@ -224,6 +243,9 @@ h3 {
 
 .fa-brands {
   color: white; }
+
+.item {
+  font-size: 14px; }
 
 footer {
   height: 6vh;

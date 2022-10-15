@@ -57,55 +57,59 @@
     <!-- Termina barra de navegación -->
     <!-- Comienza contenido principal de la página -->
     <main>
-        <div class="row p-4">
+        <div class="row container-form p-4">
             <div class="col-12">
                 <h1>Contacto</h1>
             </div>
-        </div>
-        <div class="container">
-            <div class="row formulario">
-                <div class="col-12">
-                    <form class="row g-3">
-                        <div class="col-md-6">
-                            <label for="validationCustom01" class="form-label">Nombres</label>
-                            <input type="text" class="form-control" id="validationCustom01" value="" required>
-                            <div class="valid-feedback">
-                                Muy bien!
+
+            <div class="container ">
+                <div class="row formulario">
+                    <div class="col-12">
+                        <form class="row g-3 p-3">
+                            <div class="col-md-6">
+                                <label for="validationCustom01" class="form-label">Nombres</label>
+                                <input type="text" class="form-control" id="validationCustom01" value="" required>
+                                <div class="valid-feedback">
+                                    Muy bien!
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="validationCustom02" class="form-label">Apellidos</label>
-                            <input type="text" class="form-control" id="validationCustom02" value="" required>
-                            <div class="valid-feedback">
-                                Looks good!
+                            <div class="col-md-6">
+                                <label for="validationCustom02" class="form-label">Apellidos</label>
+                                <input type="text" class="form-control" id="validationCustom02" value="" required>
+
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="inputEmail4" class="form-label">Correo Electrónico</label>
-                            <input type="email" class="form-control" id="inputEmail4" required>
-                        </div>
-                        <div class="col-12">
-                            <label for="inputAddress" class="form-label">Domicilio</label>
-                            <input type="text" class="form-control" id="inputAddress" placeholder="">
-                        </div>
-                        <div class="col-md-6">
-                            <label for="inputCity" class="form-label">Ciudad</label>
-                            <input type="text" class="form-control" id="inputCity">
-                        </div>
-                        <div class="col-12">
-                            <label for="inputState" class="form-label">Tema</label>
-                            <select id="inputState" class="form-select">
-                            <option selected>Elegir</option>
-                            <option>Cotización</option>
-                            <option>Diseño</option>
+                            <div class="col-md-6">
+                                <label for="inputEmail4" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="inputEmail4" value="" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputEmail4" class="form-label">Teléfono</label>
+                                <input type="text" class="form-control" id="inputEmail4" value="" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="inputAddress" class="form-label">Domicilio</label>
+                                <input type="text" class="form-control" id="inputAddress" value="">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputCity" class="form-label">Ciudad</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputState" class="form-label">Tema</label>
+                                <select id="inputState" class="form-select">
+                            <option selected>Presupuesto</option>
+                            <option>Consulta</option>
+                            <option>Asesoria</option>
                           </select>
+                            </div>
+                            <div class="form">
+                                <label for="Mensaje">Mensaje</label>
+                                <textarea class="form-control" name="Mensaje" id="mensaje" cols="20" rows="3"></textarea></div>
+                            <div class="boton">
+                                <button class="btn btn-light" type="submit" id="enviar" value="Enviar" placeholder="Enviar">Enviar</button>
+
+                        </form>
                         </div>
-                        <div class="formulario">
-                            <label for="Mensaje">Mensaje</label>
-                            <textarea class="form-control" name="Mensaje" id="mensaje" cols="20" rows="3"></textarea></div>
-                        <div class="boton">
-                            <button class="btn btn-light" type="submit" id="enviar" value="Enviar" placeholder="Enviar">Enviar</button>
-                    </form>
                     </div>
                 </div>
             </div>

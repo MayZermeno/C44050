@@ -1,12 +1,20 @@
     main {
         height: 88vh;
         width: 100%;
-        background: $darkbg;
+        background-image: url("../assets/galery/textu.png");
+        background-color: $darkbg;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         overflow-y: scroll;
         overflow-x: hidden;
         .contenedorindex {
             height: 88vh;
         }
+    }
+    
+    .row {
+        margin: 0;
     }
     
     .fondo {
@@ -74,7 +82,8 @@
         }
     }
     
-    @mixin tamanos($ancho, $alto) {
+    @mixin tamanos($ancho,
+    $alto) {
         width: $ancho;
         max-height: $alto;
     }
@@ -171,7 +180,8 @@
             }
         }
         .card-img-top {
-            @include tamanos(auto, 300px)
+            @include tamanos(auto,
+            300px)
         }
     }
     
@@ -194,12 +204,26 @@
         color: $colorsecundario;
     }
     
+    h2 {
+        color: $colorcontrastey;
+    }
+    
     h3 {
-        color: $colorsecundario;
+        color: $coloractive;
+    }
+    
+    .text-muted {
+        color: $coloractive !important;
+    }
+    
+    .container-form {
+        width: 100vw;
+        height: 100%;
     }
     
     .formulario {
-        background: $colorcontraste;
+        border-radius: 10px;
+        background: $gradiente;
         color: white;
     }
     
@@ -239,4 +263,8 @@
     
     .fa-brands {
         color: white;
+    }
+    
+    .item {
+        font-size: 14px;
     }
