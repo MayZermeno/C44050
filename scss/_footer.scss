@@ -1,34 +1,34 @@
-footer {
-    min-height: 8vh;
-    background-color: rgb(36, 36, 37);
-    .item-footer {
-        padding: 0px 15px;
+    footer {
+        .item-footer {
+            .fa-facebook,
+            .fa-instagram,
+            .fa-linkedin,
+            .fa-whatsapp {
+                @extend %iconos;
+                color: white
+            }
+        }
+        .row-footer {
+            min-height: 8vh;
+            background-color: rgb(36, 36, 37);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .text-muted {
+                display: flex;
+                justify-content: center;
+            }
+            .redes {
+                padding: 10px 0px;
+            }
+        }
     }
-}
-
-.row-footer {
-    height: 100%;
-    .text-muted {
-        display: flex;
-        justify-content: center;
+    
+    $redes: ( facebook:rgba(77, 77, 213, 0.773), instagram: rgba(216, 89, 169, 0.702), whatsapp: rgba(42, 209, 42, 0.481), linkedin: rgba(36, 157, 222, 0.777), );
+    @each $redsocial,
+    $color in $redes {
+        .fa-#{$redsocial} {
+            background: $color;
+            border-radius: 3px;
+        }
     }
-}
-
-$redes: ( facebook:rgba(77, 77, 213, 0.773), instagram: rgba(216, 89, 169, 0.702), whatsapp: rgba(42, 209, 42, 0.481), linkedin: rgba(36, 157, 222, 0.777), );
-@each $redsocial,
-$color in $redes {
-    .fa-#{$redsocial} {
-        background: $color;
-        border-radius: 3px;
-    }
-}
-
-.item-footer {
-    .fa-facebook,
-    .fa-instagram,
-    .fa-linkedin,
-    .fa-whatsapp {
-        @extend %iconos;
-        color: white
-    }
-}

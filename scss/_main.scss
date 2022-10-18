@@ -96,11 +96,6 @@
                 -webkit-animation: wobble-hor-bottom 0.9s both;
                 animation: wobble-hor-bottom 0.9s both;
             }
-            /**
- * ----------------------------------------
-* animation wobble-hor-bottom
- * ----------------------------------------
- */
             @-webkit-keyframes wobble-hor-bottom {
                 0%,
                 100% {
@@ -227,17 +222,15 @@
     .container-form {
         width: 100vw;
         height: 100%;
-    }
-    
-    .formulario {
-        border-radius: 10px;
-        background: $gradiente;
-        color: white;
-    }
-    
-    .titulo {
-        text-align: center;
-        color: $colorsecundario;
+        .formulario {
+            border-radius: 10px;
+            background: $gradiente;
+            color: white;
+        }
+        .titulo {
+            text-align: center;
+            color: $colorsecundario;
+        }
     }
     
     @-webkit-keyframes rotate-vert-center {
@@ -271,12 +264,4 @@
     
     .fa-brands {
         color: white;
-    }
-    
-    .item {
-        font-size: 14px;
-    }
-    
-    .btn-link {
-        color: $colorcontrastey;
     }
