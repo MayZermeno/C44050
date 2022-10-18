@@ -15,7 +15,7 @@
     box-shadow: 0px 13px 5px 0px #363636; }
 
 header .navbar {
-  height: 6vh; }
+  height: auto; }
   header .navbar ul li {
     list-style: none; }
     header .navbar ul li a {
@@ -256,25 +256,68 @@ h3 {
 .btn-link {
   color: #f7f701; }
 
+footer {
+  min-height: 8vh;
+  background-color: #242425; }
+  footer .item-footer {
+    padding: 0px 15px; }
+
+.row-footer {
+  height: 100%; }
+  .row-footer .text-muted {
+    display: flex;
+    justify-content: center; }
+
+.fa-facebook {
+  background: rgba(77, 77, 213, 0.773);
+  border-radius: 3px; }
+
+.fa-instagram {
+  background: rgba(216, 89, 169, 0.702);
+  border-radius: 3px; }
+
+.fa-whatsapp {
+  background: rgba(42, 209, 42, 0.481);
+  border-radius: 3px; }
+
+.fa-linkedin {
+  background: rgba(36, 157, 222, 0.777);
+  border-radius: 3px; }
+
+.item-footer .fa-facebook,
+.item-footer .fa-instagram,
+.item-footer .fa-linkedin,
+.item-footer .fa-whatsapp {
+  color: white; }
+
 .accordion .accordion-item {
   background: transparent !important;
   color: white; }
+  .accordion .accordion-item .accordion-header {
+    background: transparent !important;
+    color: white; }
   .accordion .accordion-item .accordion-button {
     background: #64396a !important;
     color: #f7f701;
     font-weight: 500; }
-
-.accordion-header {
-  background: transparent !important;
-  color: white; }
+    .accordion .accordion-item .accordion-button:focus {
+      z-index: 3;
+      border-color: #de86fe;
+      outline: 0;
+      box-shadow: 0 0 0 0.25rem rgba(253, 13, 205, 0.25); }
 
 .accordion-button:not(.collapsed) {
   color: #64396a;
   background-color: #e7f1ff;
   box-shadow: inset 0 -1px 0 rgba(164, 218, 117, 0.13); }
+  .accordion-button:not(.collapsed)::after {
+    background-image: url(../assets/down-arrow.png);
+    transform: rotate(-180deg); }
 
 .link {
   color: #ff68c5; }
+  .link:hover {
+    color: #f7f701 !important; }
 
 .blog {
   margin-top: 20px;
@@ -303,34 +346,6 @@ h3 {
 
 .card-overlay:hover {
   opacity: 1; }
-
-footer {
-  height: 6vh;
-  background-color: #242425; }
-  footer .item-footer {
-    padding: 0px 15px; }
-
-.fa-facebook {
-  background: rgba(77, 77, 213, 0.773);
-  border-radius: 3px; }
-
-.fa-instagram {
-  background: rgba(216, 89, 169, 0.702);
-  border-radius: 3px; }
-
-.fa-whatsapp {
-  background: rgba(42, 209, 42, 0.481);
-  border-radius: 3px; }
-
-.fa-linkedin {
-  background: rgba(36, 157, 222, 0.777);
-  border-radius: 3px; }
-
-.item-footer .fa-facebook,
-.item-footer .fa-instagram,
-.item-footer .fa-linkedin,
-.item-footer .fa-whatsapp {
-  color: white; }
 
 * {
   margin: 0;

@@ -1,8 +1,16 @@
 footer {
-    height: 6vh;
+    min-height: 8vh;
     background-color: rgb(36, 36, 37);
     .item-footer {
         padding: 0px 15px;
+    }
+}
+
+.row-footer {
+    height: 100%;
+    .text-muted {
+        display: flex;
+        justify-content: center;
     }
 }
 
