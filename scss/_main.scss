@@ -184,6 +184,10 @@
         opacity: 1;
     }
     
+    .card-img-overlay:focus {
+        opacity: 1;
+    }
+    
     .texto {
         text-align: justify;
         p {

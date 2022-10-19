@@ -33,6 +33,7 @@
   
   .link {
       color: $coloractive;
+      text-decoration: none;
       &:hover {
           color: $colorcontrastey !important;
       }

@@ -1,0 +1,30 @@
+.main-error {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../assets/galery/textu.png");
+    background-color: #000000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    .error {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .text-error {
+            text-align: center;
+        }
+        .img-error {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .btn-return {
+        background: $colorcontraste !important;
+        color: $colorcontrastey;
+        font-size: 20px;
+    }
+}

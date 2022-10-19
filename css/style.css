@@ -183,6 +183,9 @@ main {
 .card-img-overlay:hover {
   opacity: 1; }
 
+.card-img-overlay:focus {
+  opacity: 1; }
+
 .texto {
   text-align: justify; }
   .texto p {
@@ -304,7 +307,8 @@ footer .row-footer {
     transform: rotate(-180deg); }
 
 .link {
-  color: #ff68c5; }
+  color: #ff68c5;
+  text-decoration: none; }
   .link:hover {
     color: #f7f701 !important; }
 
@@ -335,6 +339,32 @@ footer .row-footer {
 
 .card-overlay:hover {
   opacity: 1; }
+
+.main-error {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../assets/galery/textu.png");
+  background-color: #000000;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+  .main-error .error {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .main-error .error .text-error {
+      text-align: center; }
+    .main-error .error .img-error {
+      width: 100%;
+      display: flex;
+      justify-content: center; }
+  .main-error .btn-return {
+    background: #64396a !important;
+    color: #f7f701;
+    font-size: 20px; }
 
 * {
   margin: 0;
